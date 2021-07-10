@@ -1,12 +1,87 @@
+*{
+  padding:0%;
+  margin:0%;
+  transition: all 0.5s ease;
+}
 body{
-    margin: 0;
+  margin: 0;
     background-color: #191919;
     color: #a5a3a1;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-size: 50px;
+br{
+  user-select:none;
+}
+p{
+  font-family: Courgette;
+  color:white;
+  font-size: 30px;
+}
+a{
+  font-family: 'Raleway', sans-serif;
+  color:white;
+  text-decoration: none;
+  float: none;
+  font-size: 30px;
+}
+nav ul li{
+  margin:10px;
+}
+nav{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  float:none;
+  border-bottom:5px solid white;
+}
+
+nav ul li:hover{
+  transition:0.5s ease;
+  background-color:#1E8449;
+  border-radius:6px;
+  font-size:32px;
+  box-shadow: 1px 5px 13px 6px rgba(0,0,0,0.35);
+}
+li{
+  color:white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:25px;
+  list-style: none;
+}
+
+nav li{
+  padding:20px;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer{
+ position: absolute;
+left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+}
+.footer ul li{
+  font-family: 'Roboto Condensed', sans-serif;
+  padding:10px;
+  text-decoration: none;
+  font-size:25px;
+  transition: all 0.4s ease-in-out;
+  color: #F13C20;
+
+}
+.footer img{
+  width: 30px;
+}
+img{
+ float: left;
+  width: 500px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .column>img{
   width:  100%;
@@ -21,4 +96,70 @@ h1 {
   flex: 50%;
   padding: 5px;
   overflow: hidden;
+}
+.par>p{
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+.munka>img{
+  width: 250px;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+ 
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15px;
+  margin-bottom:10px;
+}
+
+
+@media (min-width: 320px) and (max-width: 442px) {
+  img {
+    margin: 4px;
+    width: 300px;
+  }
+
+  .column>img{
+    object-fit:scale-down;
+  }
+ 
+
+@media (max-width: 768px) {
+  .munka>img{
+   width: 33.33%;
+    
+  }
+  br{
+    display: none;
+  }
+
+}}
+@media (max-width: 700px) {
+  .footer{
+    position:static;
+   
+  }
+  img{
+    width: 350px;
+  }
+}
+@media (min-width: 410px) and (max-width: 512px) {
+  .par img{
+    width: 400px;
+  }
+ 
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .par>p{
+    padding-left: 10px;
+  }
 }
