@@ -14,7 +14,7 @@ br{
   user-select:none;
 }
 p{
-  font-family: Courgette;
+ 
   color:white;
   font-size: 30px;
 }
@@ -25,10 +25,10 @@ a{
   float: none;
   font-size: 30px;
 }
-nav ul li{
+.navBar ul li{
   margin:10px;
 }
-nav{
+.navBar{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -36,7 +36,7 @@ nav{
   border-bottom:5px solid white;
 }
 
-nav ul li:hover{
+.navBar ul li:hover{
   transition:0.5s ease;
   background-color:#1E8449;
   border-radius:6px;
@@ -50,17 +50,17 @@ li{
   list-style: none;
 }
 
-nav li{
+.navBar li{
   padding:20px;
 }
-nav ul{
+.navBar ul{
   display: flex;
   flex-direction: row;
 }
 
 .footer{
- position: absolute;
-left: 0;
+  position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #333;
@@ -118,48 +118,4 @@ h1 {
   font-size: 50px;
   margin-top: 15px;
   margin-bottom:10px;
-}
-
-
-@media (min-width: 320px) and (max-width: 442px) {
-  img {
-    margin: 4px;
-    width: 300px;
-  }
-
-  .column>img{
-    object-fit:scale-down;
-  }
- 
-
-@media (max-width: 768px) {
-  .munka>img{
-   width: 33.33%;
-    
-  }
-  br{
-    display: none;
-  }
-
-}}
-@media (max-width: 700px) {
-  .footer{
-    position:static;
-   
-  }
-  img{
-    width: 350px;
-  }
-}
-@media (min-width: 410px) and (max-width: 512px) {
-  .par img{
-    width: 400px;
-  }
- 
-}
-
-@media (min-width: 0px) and (max-width: 768px) {
-  .par>p{
-    padding-left: 10px;
-  }
 }
